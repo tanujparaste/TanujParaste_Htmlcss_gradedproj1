@@ -9,7 +9,7 @@
 .prods {
   display: grid;
   gap: 2em;
-  grid-template-columns: repeat(auto-fill, 250px);
+  grid-template-columns: repeat(auto-fill, 200px);
   justify-content: space-around;
 }
 
@@ -19,7 +19,7 @@
 }
 
 article {
-  width: 250px;
+  width: 200px;
   padding: 0.5em;
   background-color: aliceblue;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
@@ -45,7 +45,7 @@ article:hover {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .btn-add-to-cart {
