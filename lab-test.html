@@ -11,68 +11,78 @@
 </head>
 
 <body>
-    <div class="form-container">
-        <form action="">
-            <h1>Lab Test Form</h1>
-            <section class="contact-details">
-                <h2 class="sub-headings">1. Patient Contact Details</h2>
-                <section class="patient-info"><input type="text" name="patientName" id="patientName"
-                        placeholder="Full Name">
-                    <input type="number" name="patientId" id="patientId" placeholder="Patient Id if exists">
-                    <input type="tel" name="patientContact" id="patientContact" placeholder="Contact Number">
-                    <input type="email" name="patientEmail" id="patientEmail" placeholder="Email Id">
+    <div class="container">
+        <h1>Lab test form</h1>
+        <section class="lab-form-container">
+            <form action="" id="form">
+                <section class="contact-details">
+                    <h2 class="sub-headings">1. Patient Contact Details</h2>
+                    <section class="patient-info"><input type="text" name="patientName" id="patientName"
+                            placeholder="Full Name">
+                        <input type="number" name="patientId" id="patientId" placeholder="Patient Id if exists">
+                        <input type="tel" name="patientContact" id="patientContact" placeholder="Contact Number">
+                        <input type="email" name="patientEmail" id="patientEmail" placeholder="Email Id">
+                    </section>
                 </section>
-
-            </section>
-            <section class="address-details">
-                <h2 class="sub-headings">2. Address</h2>
-                <section class="address-info">
-                    <input type="text" name="houseNo" id="houseNo" placeholder="H-No">
-                    <input type="text" name="street" id="street" placeholder="Street">
-                    <input type="text" name="area" id="area" placeholder="Area">
+                <section class="address-details">
+                    <h2 class="sub-headings">2. Address</h2>
+                    <section class="address-info">
+                        <input type="text" name="houseNo" id="houseNo" placeholder="H-No">
+                        <input type="text" name="street" id="street" placeholder="Street">
+                        <input type="text" name="area" id="area" placeholder="Area">
+                    </section>
+                    <label for="district">District</label>
+                    <select name="district" id="district">
+                        <option value="" selected>--Choose--</option>
+                        <option value="abc">Abc</option>
+                        <option value="def">Def</option>
+                        <option value="ghi">Ghi</option>
+                        <option value="jkl">Jkl</option>
+                        <option value="mno">Mno</option>
+                    </select>
                 </section>
-                <label for="district">District</label>
-                <select name="district" id="district">
-                    <option value="" selected>--Choose--</option>
-                    <option value="abc">Abc</option>
-                    <option value="def">Def</option>
-                    <option value="ghi">Ghi</option>
-                    <option value="jkl">Jkl</option>
-                    <option value="mno">Mno</option>
-                </select>
-            </section>
-            <section class="test-details">
-                <h2 class="sub-headings">3. Test Type <span>(Check atleast one box without fail)</span></h2>
-                <section class="test-info">
-                    <label for="cbctest">
-                        <input type="checkbox" name="cbctest" id="cbctest">CBC
-                    </label>
-                    <label for="curintest">
-                        <input type="checkbox" name="curintest" id="curintest">Complete Urine
-                    </label>
-                    <label for="lipidtest"><input type="checkbox" name="lipidtest" id="lipidtest">Lipid Profile</label>
+                <section class="test-details">
+                    <h2 class="sub-headings">3. Test Type <span>(Check atleast one box without fail)</span></h2>
+                    <section class="test-info">
+                        <label for="cbctest">
+                            <input type="checkbox" name="cbctest" id="cbctest">CBC
+                        </label>
+                        <label for="curintest">
+                            <input type="checkbox" name="curintest" id="curintest">Complete Urine
+                        </label>
+                        <label for="lipidtest"><input type="checkbox" name="lipidtest" id="lipidtest">Lipid
+                            Profile</label>
 
-                    <label for="tshtest"><input type="checkbox" name="tshtest" id="tshtest">Thyroid Stimulation
-                        Hormone(TSH)</label>
+                        <label for="tshtest"><input type="checkbox" name="tshtest" id="tshtest">Thyroid Stimulation
+                            Hormone(TSH)</label>
 
-                    <label for="glucotest"><input type="checkbox" name="glucotest" id="glucotest">Glucose Test</label>
+                        <label for="glucotest"><input type="checkbox" name="glucotest" id="glucotest">Glucose
+                            Test</label>
+                    </section>
+
                 </section>
-
+                <section class="report-details">
+                    <h2 class="sub-headings">4. Do you want a hard copy of the report also?</h2>
+                    <label for="yes"><input type="radio" name="report" id="yes">Yes</label>
+                    <label for="no"><input type="radio" name="report" id="no">No</label>
+                </section>
+                <section class="appointment-details">
+                    <h2 class="sub-headings">5. Select Date and Time</h2>
+                    <input type="date" name="date" id="date">
+                    <input type="time" name="time" id="time">
+                </section>
+            </form>
+            <img src="images/lab-test/lab-test.jpg" alt="">
+        </section>
+        <section class="button-container">
+            <section class="buttons">
+                <button type="reset" form="form">Reset</button>
+                <button type="submit" form="form">Submit</button>
             </section>
-            <section class="report-details">
-                <h2 class="sub-headings">4. Do you want a hard copy of the report also?</h2>
-                <label for="yes"><input type="radio" name="report" id="yes">Yes</label>
-                <label for="no"><input type="radio" name="report" id="no">No</label>
-            </section>
-            <section class="appointment-details">
-                <h2 class="sub-headings">5. Select Date and Time</h2>
-                <input type="date" name="date" id="date">
-                <input type="time" name="time" id="time">
-            </section>
-            <div class="buttons">
-                <button>Reset</button>
-                <button>Submit</button>
-            </div>
-        </form>
-        <img src="images/lab-test/lab-test.jpg" alt="lab test image">
+            <section class="empty"></section>
+        </section>
+    </div>
+    <footer>
+        <p>&copy;Copyright. Only for demonstration purposes.</p>
+    </footer>
     </div>
