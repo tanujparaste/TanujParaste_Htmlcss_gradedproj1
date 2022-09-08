@@ -19,6 +19,8 @@ header h1 {
   color: #f6fafe;
 }
 nav {
+  position: sticky;
+  top: 0;
   background-image: linear-gradient(to right, #8c358a, #3396e0, #8c358a);
 }
 nav ul {
